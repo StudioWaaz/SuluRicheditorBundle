@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formats xmlns="http://schemas.sulu.io/media/formats"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.1.xsd">
+
+    <format key="1000x">
+        <meta>
+            <title lang="en">SuluRicheditor: 1/2 column images format</title>
+            <title lang="fr">SuluRicheditor: Format d'images pour 1/2 colonne</title>
+        </meta>
+        <scale x="1000" mode="inset"/>
+    </format>
+    <format key="2000x">
+        <meta>
+            <title lang="en">SuluRicheditor: 1/1 column images format</title>
+            <title lang="fr">SuluRicheditor: Format d'images pour 1/1 colonne</title>
+        </meta>
+        <scale x="2000" mode="inset"/>
+    </format>
+</formats>

@@ -1,0 +1,43 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="layouts" default-type="oneColumn">
+        <types>
+            <type name="oneColumn">
+                <meta>
+                    <title lang="en">1 column</title>
+                    <title lang="fr">1 colonne</title>
+                </meta>
+                <properties>
+                    <block name="one" default-type="rich" mandatory="true">
+                        <types>
+                            <xi:include href="./richcontent.xml"
+                                            xpointer="xmlns(sulu=http://schemas.sulu.io/template/template)xpointer(/sulu:properties/sulu:block/sulu:types/sulu:type)"/>
+                        </types>
+                    </block>
+                </properties>
+            </type>
+            <type name="twoColumns">
+                <meta>
+                    <title lang="en">2 columns</title>
+                    <title lang="fr">2 colonnes</title>
+                </meta>
+                <properties>
+                    <block name="one" default-type="rich" colspan="6" mandatory="true">
+                        <types>
+                            <xi:include href="./richcontent.xml"
+                                            xpointer="xmlns(sulu=http://schemas.sulu.io/template/template)xpointer(/sulu:properties/sulu:block/sulu:types/sulu:type)"/>
+                        </types>
+                    </block>
+                    <block name="two" default-type="rich" colspan="6" mandatory="true">
+                        <types>
+                            <xi:include href="./richcontent.xml"
+                                            xpointer="xmlns(sulu=http://schemas.sulu.io/template/template)xpointer(/sulu:properties/sulu:block/sulu:types/sulu:type)"/>
+                        </types>
+                    </block>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>

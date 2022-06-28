@@ -1,0 +1,53 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="blocks" default-type="rich">
+        <types>
+            <type name="rich">
+                <meta>
+                    <title lang="en">Text bloc</title>
+                    <title lang="fr">Bloc de texte</title>
+                </meta>
+                <properties>
+                    <property name="text" type="text_editor">
+                        <meta>
+                            <title lang="en">Text</title>
+                            <title lang="fr">Texte</title>
+                        </meta>
+                    </property>
+                </properties>
+            </type>
+            <type name="image">
+                <meta>
+                    <title lang="en">Image</title>
+                    <title lang="fr">Image</title>
+                </meta>
+                <properties>
+                    <property name="image" type="single_media_selection">
+                    </property>
+                </properties>
+            </type>
+            <type name="button">
+                <meta>
+                    <title lang="en">Button</title>
+                    <title lang="fr">Bouton</title>
+                </meta>
+                <properties>
+                    <property name="link" type="link">
+                        <params>
+                            <param name="enable_target" value="true"/>
+                            <param name="enable_anchor" value="true"/>
+                            <param name="enable_title" value="true"/>
+                            <param name="types" type="collection">
+                                <param name="page"/>
+                                <param name="external"/>
+                                <param name="media"/>
+                            </param>
+                        </params>
+                    </property>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>
